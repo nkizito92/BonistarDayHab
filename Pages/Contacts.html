@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    <link rel="shortcut icon" href="Pics/mylogo3.png">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/b563a0f3f3.js"></script>
+    <script src="Contact.js"></script>
+</head>
+
+<body id="background">
+    <nav id="nav" itemscope itemtype="">
+        <a id="links" href="../index.html" itemprop="url">Home</a>
+        <a id="links" href="AboutUs.html">About Us</a>
+        <a id="links" href="HoursLocation.html">Hours &amp; Location</a>
+        <a href="../index.html"> <img id="img" src="../Pics/BDHlogo.png"></a>
+        <a id="links" href="WeeklySch.html">Weekly Schedule</a>
+    </nav>
+  <?php include('ContactformProcess.php'); ?>  
+    <form name="formSub" >
+        <legend  align="center">CONTACT US</legend>
+        <br>
+       <input id="input" name="name" type="text" placeholder="FullName"><br>
+        
+       
+        <input id="input" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"  name="phone" type="tel" placeholder="000 000 0000" title="Phone number"><br>
+        
+        
+       <input id="input" name="email" type="email" placeholder="Email">
+        <input id="input" name="subject" type="text" placeholder="Subject"><br><br>
+        
+        
+        
+        <textarea name="message" id="EmailCenter" placeholder="YourText" style="font-size:15pt;" rows="10" wrap="soft" ></textarea><br>
+        
+        
+        <input id="submit" type="submit" value="Send Message">
+    </form>
+     <footer>
+    <br>
+        <table id="footertab"> <td id="footercols">Find Us: 15635 Vision Dr. #113 Pflugerville, Tx 78660</td><td id="footercols">Email Us: bstar4dayhab@yahoo.com</td> <td id="footercols">Call Us: 512-825-2302 or 512-206-6554</td></table>
+        <small>copy rights</small>
+    </footer>
+<!--    <script> contacts ();</script>-->
+</body>
+
+</html>

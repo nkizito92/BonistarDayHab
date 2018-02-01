@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+#background{
+    background-color: rgb(225, 225, 225);
+}
+
+#nav {
+    position: sticky;
+    width: 100%;
+    background-color: rgb(0, 0, 125);
+    text-align: center;
+    
+}
+
+#img {
+    position: relative;
+    width: 150px;
+}
+#links{
+    position:relative;
+    font-size: 18pt;
+    bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: orange;
+}
+#links:hover{
+    color: white;
+}
+
+#links2{
+    text-decoration: none;
+    color: black;
+}
+#links2:active{
+    text-decoration: none;
+    color: white;
+}
+#links2:hover{
+animation: linblin 1s infinite;
+}
+@keyframes linblin {
+    
+    50%{background-color: cyan;}
+    100%{ background-color: none;}
+}
+
+#mbackground {
+    position: relative;
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14pt;
+}
+#greetings{
+    position: absolute;
+    text-align: center;
+    width: 450px;
+    top: 220px;
+    left: 280px;
+    font-size: 24pt;
+    color: white;
+    border-radius: 40px;
+}
+#imgcenter {
+    position: relative;
+    margin: auto;
+    width: 1000px;
+}
+
+#slideImg {
+    width: 100%;
+    height: 600px;
+}
+
+#listEvents {
+    width: 630px ;
+    margin: auto;
+}
+
+#Event1 {
+    border-radius: 35px;
+    width: 300px ;
+    background-color: orange;
+    padding: 20px;
+    margin: 20px;
+}
+#Event2 {
+    border-radius: 35px;
+    width: 300px ;
+    background-color: blue;
+    padding: 20px;
+    margin: 20px;
+}
+#Event3 {
+    border-radius: 35px;
+    width: 300px ;
+    background-color: green;
+    padding: 20px;
+    margin: 20px;
+}
+#Event4 {
+    border-radius: 35px;
+    width: 300px ;
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+}
+footer {
+     position: absolute;
+    z-index: 10;
+    background-color: black;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: orange;  
+}
+small {
+    color: white;
+}
+
+
+
+#footertab {
+    text-align: center;
+    margin: auto;
+}
+#footercols {
+    text-align: center;
+   padding-left: 60px;
+    padding-right: 60px;
+    color: orange;
+}
+
+
+/*AboutUs*/
+
+header {
+    margin: auto;
+    background-color: gray;
+    width: 1000px;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+#me {
+    position: relative;
+    left: 20px; 
+    width: 150px;
+}
+
+/*Hours & Location*/
+
+.map {
+    
+    margin: auto;
+    width: 750px;
+    height: 550px;
+}
+.bordermap {
+    position: relative;
+    margin: auto;
+    width: 750px;
+    height: 550px;
+    border: 8px solid orange;
+    box-shadow: 2px 2px 3px gray;
+}
+
+/*weekly Schedule*/
+#Sbackground {
+    position: relative;
+    margin: auto;
+    background-color: white;
+    width: 1100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14pt;
+}
+.schedule {
+    width: 1100px;
+   margin: auto;
+    text-align: center;
+    font-size: 12pt;
+}
+/*Contacts*/
+
+form {
+    font-size: 17pt;
+    position: relative;
+    margin: auto;
+    width: 600px;
+    background-color: rgba(255, 165, 0, 0.74);
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+#EmailCenter {
+    width: 99%;
+  overflow-x: hidden;
+}
+legend {
+    font-size: 28pt;
+}
+#input {
+    border-radius: 8px;
+    width: 99%;
+}
+
+#submit {
+font-size: 16pt;
+}
+textarea {
+        border-radius: 8px;
+    width: 99%;
+}
