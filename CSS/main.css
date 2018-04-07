@@ -44,6 +44,11 @@
     text-decoration: none;
     color: black;
 }
+
+#Event3 #links2{
+    text-decoration: none;
+    color: white;
+}
 #links2:active{
     text-decoration: none;
     color: white;
@@ -69,7 +74,8 @@ animation: linblin 1s infinite;
 #greetings{
     position: absolute;
     text-align: center;
-    width: 530px;
+    max-width: 530px;
+    width:100%;
     top: 220px;
     left: 280px;
     font-size: 24pt;
@@ -79,7 +85,8 @@ animation: linblin 1s infinite;
 #imgcenter {
     position: relative;
     margin: auto;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
 }
 
 #slideImg {
@@ -95,10 +102,12 @@ animation: linblin 1s infinite;
 #Event1 {
     border-radius: 35px;
     width: 300px ;
-    background-color: orange;
+    background-color: blue;
     padding: 20px;
     margin: 20px;
+    text-align: left;
 }
+
 #Event2 {
     border-radius: 35px;
     width: 300px ;
@@ -109,9 +118,10 @@ animation: linblin 1s infinite;
 #Event3 {
     border-radius: 35px;
     width: 300px ;
-    background-color: green;
+    background-color: black;
     padding: 20px;
     margin: 20px;
+    color: white;
 }
 #Event4 {
     border-radius: 35px;
