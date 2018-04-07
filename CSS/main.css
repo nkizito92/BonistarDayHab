@@ -11,9 +11,13 @@
 #nav {
     position: sticky;
     width: 100%;
-    background-color: rgb(0, 0, 125);
+    background-color: rgb(1, 89, 191);
     text-align: center;
     
+}
+
+#nav ul li {
+    display: inline;
 }
 
 #img {
@@ -27,10 +31,13 @@
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
-    color: orange;
+    color: white;
 }
 #links:hover{
-    color: white;
+    text-decoration: underline;
+}
+#links:active{
+    color:red;
 }
 
 #links2{
@@ -62,7 +69,7 @@ animation: linblin 1s infinite;
 #greetings{
     position: absolute;
     text-align: center;
-    width: 450px;
+    width: 530px;
     top: 220px;
     left: 280px;
     font-size: 24pt;
@@ -159,20 +166,27 @@ li {
     left: 20px; 
     width: 150px;
 }
+#imgsize {
+    width: 200px;
+}
 
 /*Hours & Location*/
 
 .map {
     
     margin: auto;
-    width: 750px;
-    height: 550px;
+    max-width: 750px;
+    max-height: 550px;
+    width: 98% !important; 
+    height: 98% !important;
 }
 .bordermap {
     position: relative;
     margin: auto;
-    width: 750px;
-    height: 550px;
+    max-width: 750px;
+    max-height: 550px;
+    width: 98% !important; 
+    height: 98% !important;  
     border: 8px solid orange;
     box-shadow: 2px 2px 3px gray;
 }
@@ -196,10 +210,11 @@ li {
 /*Contacts*/
 
 form {
+    width: 80% !important;
     font-size: 17pt;
     position: relative;
     margin: auto;
-    width: 600px;
+    max-width: 700px;
     background-color: rgba(255, 165, 0, 0.74);
     padding-left: 10px;
     padding-right: 10px;
