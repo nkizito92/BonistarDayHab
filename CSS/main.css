@@ -20,6 +20,33 @@
     display: inline;
 }
 
+@media only screen and (max-width: 700px)  {
+  #nav  {
+      position: fixed;
+      z-index: 5;
+    
+      width: 40px;
+        height: 100%;
+
+    }#nav ul{
+           visibility: hidden;
+        float: left;
+
+    }
+    #nav ul li{
+      position: relative;
+        top: 90px; display: block;
+        z-index: 1;
+       
+    }
+    
+    main {
+        position: relative;
+        left:40px;
+        width: 100%;
+    }
+}
+
 #img {
     position: relative;
     width: 150px;
@@ -66,10 +93,15 @@ animation: linblin 1s infinite;
     position: relative;
     margin: auto;
     background-color: white;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
+    
     padding-left: 20px;
     padding-right: 20px;
     font-size: 14pt;
+}
+#mbackground p {
+    padding-bottom: 10px;
 }
 #greetings{
     position: absolute;
@@ -150,12 +182,14 @@ small {
 #footertab {
     text-align: center;
     margin: auto;
+
 }
 #footercols {
     text-align: center;
    padding-left: 60px;
     padding-right: 60px;
     color: orange;
+    display: inline;
 }
 
 
@@ -187,16 +221,14 @@ li {
     margin: auto;
     max-width: 750px;
     max-height: 550px;
-    width: 98% !important; 
+    width: 100% !important; 
     height: 98% !important;
 }
 .bordermap {
     position: relative;
     margin: auto;
     max-width: 750px;
-    max-height: 550px;
-    width: 98% !important; 
-    height: 98% !important;  
+    max-height: 550px;  
     border: 8px solid orange;
     box-shadow: 2px 2px 3px gray;
 }
