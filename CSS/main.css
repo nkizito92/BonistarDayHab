@@ -184,7 +184,7 @@ small {
     margin: auto;
 
 }
-#footercols {
+#footertab li{
     text-align: center;
    padding-left: 60px;
     padding-right: 60px;
@@ -193,7 +193,7 @@ small {
 }
 
 
-/*AboutUs*/
+/*WhatWeDo*/
 
 header {
     margin: auto;
@@ -214,6 +214,21 @@ li {
     width: 200px;
 }
 
+#programs li {
+ padding-bottom: 40px;
+}
+
+#imgProg{
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+}
+#imgProg img {
+    position: relative;
+    width: 440px;
+    left: 300px;
+    bottom: 300px;
+}
 /*Hours & Location*/
 
 .map {
