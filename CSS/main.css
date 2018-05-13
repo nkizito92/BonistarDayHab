@@ -4,11 +4,11 @@
     font-weight: 500;
 }
 
-#background{
+body {
     background-color: rgb(225, 225, 225);
 }
 
-#nav {
+nav {
     position: sticky;
     width: 100%;
     background-color: rgb(1, 89, 191);
@@ -16,7 +16,7 @@
     
 }
 
-#nav ul li {
+nav ul li {
     display: inline;
 }
 
@@ -28,7 +28,8 @@
       width: 40px;
         height: 100%;
 
-    }#nav ul{
+    }
+    #nav ul{
            visibility: hidden;
         float: left;
 
@@ -89,7 +90,7 @@ animation: linblin 1s infinite;
     100%{ background-color: none;}
 }
 
-#mbackground {
+main {
     position: relative;
     margin: auto;
     background-color: white;
@@ -163,7 +164,7 @@ animation: linblin 1s infinite;
     margin: 20px;
 }
 footer {
-     position: absolute;
+     position: relative;
     z-index: 10;
     background-color: black;
     margin: auto;
@@ -172,6 +173,7 @@ footer {
     width: 100%;
     text-align: center;
     color: orange;  
+    
 }
 small {
     color: white;
@@ -179,12 +181,12 @@ small {
 
 
 
-#footertab {
+footer ul {
     text-align: center;
     margin: auto;
 
 }
-#footertab li{
+footer ul li{
     text-align: center;
    padding-left: 60px;
     padding-right: 60px;
@@ -205,11 +207,7 @@ header {
 li {
     list-style: none;
 }
-#me {
-    position: relative;
-    left: 20px; 
-    width: 150px;
-}
+
 #imgsize {
     width: 200px;
 }
@@ -219,7 +217,7 @@ li {
 }
 
 #imgProg{
-    position: absolute;
+    
     width: 100%;
     max-width: 400px;
 }
@@ -229,6 +227,7 @@ li {
     left: 300px;
     bottom: 300px;
 }
+
 /*Hours & Location*/
 
 .map {
