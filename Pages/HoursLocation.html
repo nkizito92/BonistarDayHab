@@ -13,33 +13,114 @@
 
 <body>
     <nav itemscope itemtype="">
-        <ul><li><a href="../index.html" itemprop="url">Home</a></li>
+        <ul>
+            <li><a href='../index.html' target="_self"><img id="img" src="../Pics/BDHlogo.png" draggable="false"></a></li>
+            <li><a href="../index.html" itemprop="url">Home</a></li>
             <li><a href="WhatWeDo.html">What We Do</a></li>
-            <li><a href="../index.html"> <img id="img" src="../Pics/BDHlogo.png" draggable="false"></a></li>
-<!--            <li><a href="WeeklySch.html">Weekly Schedule</a></li>-->
-            <li><a href="Contacts.php">Contact</a></li></ul>
+            <li><a href="HoursLocation.html" style="color: orange;">Hours &amp; Location</a></li>
+            <!--            <li><a href="WeeklySch.html">Weekly Schedule</a></li>-->
+            <li><a href="Contacts.php">Contact</a></li>
+        </ul>
     </nav>
 
     <main>
         <h1>Our Hours!! </h1>
-        <br />
-        <p>
-            Monday through Friday.
-        </p>
-        <p>
-        8:30am to 4:00pm.
-        </p>
-        
-        <p>
-            Visit us at 15635 Vision Dr. #113 Pflugerville, Tx 78660.
-        </p>
+        <br>
+        <p> Monday through Friday.</p>
+        <p> 8:30am to 4:00pm.</p>
+
+        <p>Visit us at 15635 Vision Dr. #113 Pflugerville, Tx 78660.</p>
+        <section>
+            <h2 id="go">View Task sheet</h2>
+            <table id="task" border="1" cellpadding="20px">
+                <tr>
+                    <td>
+                        <h3>Time</h3>
+                    </td>
+                    <td>
+                        <h3>Programs</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8:30am</td>
+                    <td>Check in consumers</td>
+                </tr>
+
+                <tr>
+                    <td>9:00 - 9:30</td>
+                    <td>Serve Coffee, Tea, and Hot Cocoa</td>
+                </tr>
+                <tr>
+                    <td>9:30 - 10:30</td>
+                    <td>Board Games</td>
+                </tr>
+                <tr>
+                    <td>10:30 - 10:45</td>
+                    <td>Break (Snacks and Music)</td>
+                </tr>
+                <tr>
+                    <td>10:45 - 11:30</td>
+                    <td>Daily learning with peers</td>
+                </tr>
+                <tr>
+                    <td>11:30 - 12:00pm</td>
+                    <td>Basic Skills (Maths, Reading, Writting, Spelling, Word Scramble, Sign Language, Computer Skills)</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 1:00</td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td>1:00 - 2:00</td>
+                    <td>Arts &amp; Crafts, Puzzles, Coloring, etc</td>
+                </tr>
+                <tr>
+                    <td>2:00 - 2:15 </td>
+                    <td>Break (Snacks and Music)</td>
+                </tr>
+                <tr>
+                    <td>2:15 - 3:30</td>
+                    <td>Movies</td>
+                </tr>
+                <tr>
+                    <td>3:30 - 4:00</td>
+                    <td>Check outs, and Consumer pick ups</td>
+                </tr>
+                <tr>
+                    <td>4:00 pm</td>
+                    <td>CLOSED</td>
+                </tr>
+
+            </table>
+        </section>
+        <script>
+            function start() {
+                var task = document.getElementById("task");
+                task.hidden = true;
+                var next = "back";
+
+                function hide() {
+
+                    if (next === "back") {
+                        task.hidden = false;
+                        next = "hide";
+                    } else {
+                        task.hidden = true;
+                        next = "back";
+                    }
+                }
+                var go = document.getElementById("go");
+                go.addEventListener("click", hide);
+            }
+            start();
+        </script>
         <div class="bordermap"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.4812776671347!2d-97.66338688519127!3d30.450803506216964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ce518fca88e5%3A0x997c21919b303b6!2s15635+Vision+Dr+%23113%2C+Pflugerville%2C+TX+78660!5e0!3m2!1sen!2sus!4v1514330456085" frameborder="0" style="border:0" allowfullscreen></iframe></div>
     </main>
-     <footer>
+    <footer>
         <br>
         <ul>
-            <li>Find Us: 15635 Vision Dr. #113 Pflugerville, TX 78660</li>
-            <li>Email Us: bstar4dayhab@yahoo.com</li>
+            <li>Find Us: 15635 Vision Dr. &#35;113 Pflugerville, TX 78660</li>
+            <li>Email Us: bstar4dayhab&#64;yahoo.com</li>
             <li>Call Us: 512-825-2302 or 512-206-6554</li>
         </ul>
         <small>copy rights</small>
