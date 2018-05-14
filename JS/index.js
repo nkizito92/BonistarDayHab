@@ -16,7 +16,7 @@ function index() {
                 swiTch = "image3";
                 break;
             case 'image3':
-                imgslider.src = "../Pics/Girraf.jpg";
+                imgslider.src = "../Pics/building.jpg";
                 swiTch = "image1";
                 break;
         }
@@ -29,11 +29,19 @@ function index() {
                 swiTch = "image2";
                 break;
             case 'image2':
-                imgslider2.src = "../Pics/cat.jpg";
+                imgslider2.src = "../Pics/bracelet.jpg";
                 swiTch = "image3";
                 break;
             case 'image3':
                 imgslider2.src = "../Pics/Computers.jpg";
+                swiTch = "image4";
+                break;
+            case 'image4':
+                imgslider2.src = "../Pics/Tv.jpg";
+                swiTch = "image5";
+                break;
+            case 'image5':
+                imgslider2.src = "../Pics/drawing.jpg";
                 swiTch = "image1";
                 break;
         }

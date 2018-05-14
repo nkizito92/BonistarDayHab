@@ -52,7 +52,7 @@ nav ul li {
     position: relative;
     width: 150px;
 }
-#links{
+nav ul li a{
     position:relative;
     font-size: 18pt;
     bottom: 60px;
@@ -61,10 +61,10 @@ nav ul li {
     text-decoration: none;
     color: white;
 }
-#links:hover{
+nav ul li a:hover{
     text-decoration: underline;
 }
-#links:active{
+nav ul li a:active{
     color:red;
 }
 
@@ -222,10 +222,10 @@ li {
     max-width: 400px;
 }
 #imgProg img {
-    position: relative;
+    position: absolute;
     width: 440px;
     left: 300px;
-    bottom: 300px;
+    bottom: 120px;
 }
 
 /*Hours & Location*/
