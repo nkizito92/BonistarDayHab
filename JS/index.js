@@ -15,6 +15,10 @@ function index() {
                 break;
             case 'image3':
                 imgslider.src = "../Pics/Cat.jpg";
+                swiTch = "image4";
+                break;
+             case 'image4':
+                imgslider.src = "../Pics/clients.jpg";
                 swiTch = "image1";
                 break;
         }

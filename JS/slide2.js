@@ -6,7 +6,7 @@ function slide() {
 
         switch (swiTch) {
             case 'image1':
-                imgslider2.src = "../Pics/Girraf.jpg";
+                imgslider2.src = "../Pics/client2.jpg";
                 swiTch = "image2";
                 break;
             case 'image2':

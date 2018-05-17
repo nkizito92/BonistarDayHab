@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(225, 225, 225);
+    background-color: #eaeaea;
 }
 
 nav {
@@ -129,6 +129,10 @@ main {
     margin: auto;
     max-width: 1000px;
     width: 100%;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-image: url("../Pics/Borderhand.jpg") 270 round;
+   
 }
 
 #slideImg {
@@ -274,6 +278,9 @@ li {
 }
 /*Contacts*/
 
+#background {
+    background-image: url(../Pics/hand-prints.jpg);
+}
 form {
     width: 80% !important;
     font-size: 17pt;
