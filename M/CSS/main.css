@@ -1,8 +1,9 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
 }
+
 ::-webkit-scrollbar {
     min-width: 10px;
 }
@@ -26,71 +27,26 @@
     background-color: #a0a0a0;
     border-radius: 5px
 }
-
-
 body {
     background-color: #eaeaea;
 }
 
 nav {
+    position: -o-sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
     position: sticky;
-    -webkit-position: sticky;
-    -ms-position: sticky;
-    -o-position: sticky;
-    -moz-position: sticky;
+    max-width: 360px;
     width: 100%;
     background-color: rgb(1, 89, 191);
-    margin: 0 auto;
-    padding: 20px 0;
     text-align: center;
+    margin: 0 auto;
 }
 
-nav ul li {
-    display: inline;
+nav li {
+    display: inline-block;
 }
-
-/*logo*/
-a[title="Home"] {
-    position: relative;
-    font-family: Vivaldi;
-    font-size: 26pt;
-    font-weight: normal;
-    text-decoration: none;
-    color: white;
-    text-shadow: 1px 1px black,
-    -1px -1px black,
-    1px -1px black,
-    -1px 1px black;
-    padding: 10px;
-    bottom: 10px;
-    right: 200px;
-}
-
-nav img {
-    position: absolute;
-    width: 80px;
-    bottom: -23px;
-    right: -8px;
-}
-
-nav a[title="Home"]:hover {
-    background: none;
-    text-decoration: none;
-}
-
-nav a[title="Home"]:active {
-    color: white;
-}
-    /*day Hab*/
-nav a[title="Home"] span {
-    position: absolute;
-    width: 200px;
-    font-size: 14pt;
-    left: -50px;
-    top: 42px;
-    text-shadow: none;
-}
-
 
 a[target="_self"] {
 position: relative;
@@ -101,17 +57,22 @@ a[target="_self"]:hover {
 text-decoration: none;
 }
 
-nav li a{
+#img {
+    position: relative;
+    width: 150px;
+}
+nav a{
     position:relative;
-    font-size: 18pt;
-    padding: 0 10px;
+    font-size: 14pt;
+    padding-left: 10px;
+    padding-right: 10px;
     text-decoration: none;
     color: white;
 }
-nav li a:hover{
+nav a:hover{
     text-decoration: underline;
 }
-nav li a:active{
+nav a:active{
     color:red;
 }
 
@@ -141,12 +102,11 @@ main {
     position: relative;
     margin: auto;
     background-color: white;
-    max-width: 800px;
+    max-width: 320px;
     width: 100%;
-    
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
     font-size: 14pt;
+    height: 100%;
 }
 #mbackground p {
     padding-bottom: 10px;
@@ -154,37 +114,46 @@ main {
 #greetings{
     position: absolute;
     text-align: center;
-    max-width: 530px;
+    max-width: 330px;
     width:100%;
-    top: 220px;
-    left: 280px;
-    font-size: 24pt;
+    top: 100px;
+    left: 0px;
+    font-size: 10pt;
     color: white;
     border-radius: 40px;
     
 }
 #imgcenter {
     position: relative;
-    margin:0 auto;
-    max-width: 1100px;
-    padding-bottom: 620px;
-    border-left: 120px solid transparent;
-    border-right: 120px solid transparent;
-    border-image: url("../Pics/Borderhand.jpg") 270 round;
+    margin: auto;
+    max-width: 300px;
+    width: 100%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-image: url("../../Pics/Borderhand.jpg") 270 round;
     transition: 1s ease;
-    background-image: url("../Pics/building.jpg");
+    background-image: url("../../Pics/building.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    height: 168px;
+   
+}
+
+#slideImg {
+    width: 100%;
+    height: 260px;
 }
 
 #listEvents {
-    width: 320px ;
+    position: relative;
+    width: 360px ;
     margin: auto;
+    right: 20px;
 }
 
 #Event1 {
     border-radius: 35px;
-    width: 300px ;
+    width: 230px ;
     background-color: blue;
     padding: 20px;
     margin: 20px;
@@ -193,14 +162,14 @@ main {
 
 #Event2 {
     border-radius: 35px;
-    width: 300px ;
+    width: 230px ;
     background-color: blue;
     padding: 20px;
     margin: 20px;
 }
 #Event3 {
     border-radius: 35px;
-    width: 300px ;
+    width: 230px ;
     background-color: black;
     padding: 20px;
     margin: 20px;
@@ -208,42 +177,24 @@ main {
 }
 #Event4 {
     border-radius: 35px;
-    width: 300px ;
+    width: 230px ;
     background-color: red;
     padding: 20px;
     margin: 20px;
 }
-footer {
-     position: relative;
-    z-index: 10;
-    background-color: black;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    text-align: center;
-    color: orange;  
-    
-}
+
 small {
     color: white;
 }
 
-
-
-footer ul {
+footer {
+    background-color: black;
     text-align: center;
-    margin: auto;
-
+    margin:0 auto;
+    font-size: 10pt;
+    width: 360px;
+    color: orange;  
 }
-footer ul li{
-    text-align: center;
-   padding-left: 60px;
-    padding-right: 60px;
-    color: orange;
-    display: inline;
-}
-
 
 /*WhatWeDo*/
 
@@ -316,14 +267,14 @@ li {
 /*Contacts*/
 
 #background {
-    background-image: url(../Pics/hand-prints.jpg);
+    background-image: url(../../Pics/hand-prints.jpg);
 }
 form {
     width: 80% !important;
     font-size: 17pt;
     position: relative;
     margin: auto;
-    max-width: 700px;
+    max-width: 360px;
     background-color: rgba(255, 165, 0, 0.74);
     padding-left: 10px;
     padding-right: 10px;

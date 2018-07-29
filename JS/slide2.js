@@ -23,6 +23,10 @@ function slide() {
                 break;
             case 'image5':
                 imgslider2.src = "../Pics/drawing.jpg";
+                swiTch = "image6";
+                break;
+            case 'image6':
+                imgslider2.src = "../Pics/gameConsole.jpg";
                 swiTch = "image1";
                 break;
         }
