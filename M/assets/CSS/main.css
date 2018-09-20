@@ -27,6 +27,7 @@
     background-color: #a0a0a0;
     border-radius: 5px
 }
+
 body {
     background-color: #eaeaea;
 }
@@ -37,8 +38,8 @@ nav {
     position: -moz-sticky;
     position: -ms-sticky;
     position: sticky;
-    max-width: 360px;
     width: 100%;
+    padding: 10px 0;
     background-color: rgb(1, 89, 191);
     text-align: center;
     margin: 0 auto;
@@ -49,94 +50,92 @@ nav li {
 }
 
 a[target="_self"] {
-position: relative;
-top:0px;
+    position: relative;
+    top: 0px;
 }
 
 a[target="_self"]:hover {
-text-decoration: none;
+    text-decoration: none;
 }
 
 #img {
     position: relative;
     width: 150px;
 }
-nav a{
-    position:relative;
+
+nav a {
+    position: relative;
     font-size: 14pt;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
     text-decoration: none;
     color: white;
 }
-nav a:hover{
+
+nav a:hover {
     text-decoration: underline;
 }
-nav a:active{
-    color:red;
+
+nav a:active {
+    color: red;
 }
 
-#links2{
+#links2 {
     text-decoration: none;
     color: black;
 }
 
-#Event3 #links2{
+#Event3 #links2 {
     text-decoration: none;
     color: white;
 }
-#links2:active{
+
+#links2:active {
     text-decoration: none;
     color: white;
 }
-#links2:hover{
-animation: linblin 1s infinite;
+
+#links2:hover {
+    animation: linblin 1s infinite;
 }
+
 @keyframes linblin {
-    
-    50%{background-color: cyan;}
-    100%{ background-color: none;}
+
+    50% {
+        background-color: cyan;
+    }
+
+    100% {
+        background-color: none;
+    }
 }
 
 main {
-    position: relative;
-    margin: auto;
+    margin: 0 auto;
     background-color: white;
-    max-width: 320px;
+    max-width: 768px;
+    min-width: 360px;
     width: 100%;
-    padding: 0 20px;
     font-size: 14pt;
     height: 100%;
 }
+
 #mbackground p {
     padding-bottom: 10px;
 }
-#greetings{
-    position: absolute;
-    text-align: center;
-    max-width: 330px;
-    width:100%;
-    top: 100px;
-    left: 0px;
-    font-size: 10pt;
-    color: white;
-    border-radius: 40px;
-    
-}
+
 #imgcenter {
     position: relative;
-    margin: auto;
-    max-width: 300px;
+    margin: 0 auto;
+    min-width: 360px;
+    max-width: 768px;
     width: 100%;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-image: url("../../Pics/Borderhand.jpg") 270 round;
+    border-image: url("/assets/images/Borderhand.jpg") 270 round;
     transition: 1s ease;
-    background-image: url("../../Pics/building.jpg");
+    background-image: url("/assets/images/building.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 168px;
-   
+    padding-bottom: 56%;
+
 }
 
 #slideImg {
@@ -146,40 +145,42 @@ main {
 
 #listEvents {
     position: relative;
-    width: 360px ;
+    width: 360px;
     margin: auto;
     right: 20px;
 }
 
 #Event1 {
     border-radius: 35px;
-    width: 230px ;
+    width: 80%;
     background-color: blue;
-    padding: 20px;
+    padding: 5%;
     margin: 20px;
     text-align: left;
 }
 
 #Event2 {
     border-radius: 35px;
-    width: 230px ;
+    width: 80%;
     background-color: blue;
-    padding: 20px;
+    padding: 5%;
     margin: 20px;
 }
+
 #Event3 {
     border-radius: 35px;
-    width: 230px ;
+    width: 80%;
     background-color: black;
-    padding: 20px;
+    padding: 5%;
     margin: 20px;
     color: white;
 }
+
 #Event4 {
     border-radius: 35px;
-    width: 230px ;
+    width: 80%;
     background-color: red;
-    padding: 20px;
+    padding: 5%;
     margin: 20px;
 }
 
@@ -190,10 +191,10 @@ small {
 footer {
     background-color: black;
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
     font-size: 10pt;
-    width: 360px;
-    color: orange;  
+    width: 100%;
+    color: orange;
 }
 
 /*WhatWeDo*/
@@ -214,14 +215,15 @@ li {
 }
 
 #programs li {
- padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
-#imgProg{
-    
+#imgProg {
+
     width: 100%;
     max-width: 400px;
 }
+
 #imgProg img {
     position: absolute;
     width: 440px;
@@ -232,19 +234,20 @@ li {
 /*Hours & Location*/
 
 .map {
-    
+
     margin: auto;
-    max-width: 750px;
-    max-height: 550px;
-    width: 100% !important; 
+    max-width: 640px;
+    max-height: 350px;
+    width: 100% !important;
     height: 98% !important;
 }
+
 .bordermap {
     position: relative;
     margin: auto;
-    max-width: 750px;
-    max-height: 550px;  
-    border: 8px solid orange;
+    max-width: 640px;
+    max-height: 350px;
+    border: 6px solid orange;
     box-shadow: 2px 2px 3px gray;
 }
 
@@ -258,44 +261,53 @@ li {
     padding-right: 20px;
     font-size: 14pt;
 }
+
 .schedule {
     width: 1100px;
-   margin: auto;
+    margin: auto;
     text-align: center;
     font-size: 12pt;
 }
+
 /*Contacts*/
 
 #background {
-    background-image: url(../../Pics/hand-prints.jpg);
+    background-image: url(../images/hand-prints.jpg);
 }
+
 form {
-    width: 80% !important;
+    width: 100% !important;
     font-size: 17pt;
     position: relative;
-    margin: auto;
-    max-width: 360px;
+    margin: 0 auto;
+    min-width: 360px;
+    max-width: 640px;
     background-color: rgba(255, 165, 0, 0.74);
-    padding-left: 10px;
-    padding-right: 10px;
-
 }
+
+form div {
+    width: 95%;
+}
+
 #EmailCenter {
     width: 99%;
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
+
 legend {
     font-size: 28pt;
 }
+
 #input {
     border-radius: 8px;
     width: 99%;
 }
 
 #submit {
-font-size: 16pt;
+    font-size: 16pt;
 }
+
 textarea {
-        border-radius: 8px;
+    border-radius: 8px;
     width: 99%;
 }

@@ -1,7 +1,7 @@
 function slide() {
     var imgslider2 = document.getElementById("slidd");
     var swiTch = 1;
-    var images = ["../Pics/client2.jpg", "../Pics/bracelet.jpg", "../Pics/Computers.jpg", "../Pics/Tv.jpg", "../Pics/drawing.jpg", "../Pics/gameConsole.jpg", "../Pics/Girraf.jpg"]
+    var images = ["../images/client2.jpg", "../images/bracelet.jpg", "../images/Computers.jpg", "../images/Tv.jpg", "../images/drawing.jpg", "../images/gameConsole.jpg", "../images/Girraf.jpg"]
     setInterval(function(){
         swiTch++;
         if(swiTch > images.length - 1){

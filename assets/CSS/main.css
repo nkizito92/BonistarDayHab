@@ -144,35 +144,24 @@ main {
     max-width: 800px;
     width: 100%;
     
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
     font-size: 14pt;
 }
 #mbackground p {
     padding-bottom: 10px;
 }
-#greetings{
-    position: absolute;
-    text-align: center;
-    max-width: 530px;
-    width:100%;
-    top: 220px;
-    left: 280px;
-    font-size: 24pt;
-    color: white;
-    border-radius: 40px;
-    
-}
+
 #imgcenter {
     position: relative;
+    width: 100%;
     margin:0 auto;
     max-width: 1100px;
     padding-bottom: 620px;
     border-left: 120px solid transparent;
     border-right: 120px solid transparent;
-    border-image: url("../Pics/Borderhand.jpg") 270 round;
+    border-image: url("../images/Borderhand.jpg") 270 round;
     transition: 1s ease;
-    background-image: url("../Pics/building.jpg");
+    background-image: url("../images/building.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -316,7 +305,7 @@ li {
 /*Contacts*/
 
 #background {
-    background-image: url(../Pics/hand-prints.jpg);
+    background-image: url(../images/hand-prints.jpg);
 }
 form {
     width: 80% !important;
