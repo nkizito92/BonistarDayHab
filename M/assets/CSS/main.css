@@ -39,10 +39,14 @@ nav {
   width: 100%;
   padding: 10px 0;
   background-color: rgb(1, 89, 191);
-  text-align: center;
-  margin: 0 auto;
 }
 
+nav ul {
+  display: none;
+}
+nav ul li {
+  margin: 15px 0;
+}
 a[target="_self"] {
   position: relative;
   top: 0px;

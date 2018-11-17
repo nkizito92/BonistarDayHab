@@ -1,6 +1,6 @@
 .hamMenu {
   position: relative;
-  margin: 0 auto;
+  right: 30%;
   width: 50px;
   height: 50px;
   border: 1.3px solid orange;
@@ -22,7 +22,7 @@
 }
 
 .hamMenu div {
-  width: 70%;
+  width: 50%;
   border: 1.5px solid orange;
   background-color: orange;
   margin: 10px auto;
@@ -34,11 +34,11 @@
 }
 .first {
   position: relative;
-  transform: translate(0, 13px) rotate(-45deg);
-  -webkit-transform: translate(0, 13px) rotate(-45deg);
-  -moz-transform: translate(0, 13px) rotate(-45deg);
-  -ms-transform: translate(0, 13px) rotate(-45deg);
-  -o-transform: translate(0, 13px) rotate(-45deg);
+  transform: translate(9px, 13px) rotate(-45deg);
+  -webkit-transform: translate(9px, 13px) rotate(-45deg);
+  -moz-transform: translate(9px, 13px) rotate(-45deg);
+  -ms-transform: translate(9px, 13px) rotate(-45deg);
+  -o-transform: translate(9px, 13px) rotate(-45deg);
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -48,7 +48,11 @@
 
 .third {
   position: relative;
-  transform: translate(0, -13px) rotate(45deg);
+  transform: translate(-9px, -13px) rotate(45deg);
+  -webkit-transform: translate(-9px, -13px) rotate(45deg);
+  -moz-transform: translate(-9px, -13px) rotate(45deg);
+  -ms-transform: translate(-9px, -13px) rotate(45deg);
+  -o-transform: translate(-9px, -13px) rotate(45deg);
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;

@@ -1,5 +1,6 @@
 function index() {
   var imgslider = document.getElementById("imgcenter"),
+    navBar = $("nav"),
     swiTch = 1,
     slid = [
       "url(assets/images/building.jpg)",
@@ -7,13 +8,11 @@ function index() {
       "url(assets/images/Cat.jpg)",
       "url(assets/images/clients.jpg)"
     ];
-  //hamburger Menu
-  $(".hamMenu").click(function() {
-    $("nav ul").slideToggle(500);
-    $(".hamMenu div:nth-child(1)").toggleClass(".first");
-    $(".hamMenu div:nth-child(2)").toggleClass(".second");
-    $(".hamMenu div:nth-child(3)").toggleClass(".third");
-  });
+  navBar.offsetTop;
+  if (window.pageOffset >= navBar) {
+    navBar.css("position", "fixed");
+  }
+  hambugerMenu();
 
   setInterval(function() {
     swiTch++;
@@ -43,4 +42,14 @@ function slide() {
     }
     imgslider2.src = images[swiTch];
   }, 3000);
+  hambugerMenu();
+}
+// hambugerMenu
+function hambugerMenu() {
+  $(".hamMenu").click(function() {
+    $(".hamMenu div:nth-child(1)").toggleClass("first");
+    $(".hamMenu div:nth-child(2)").toggleClass("second");
+    $(".hamMenu div:nth-child(3)").toggleClass("third");
+    $("nav ul").slideToggle(500);
+  });
 }
