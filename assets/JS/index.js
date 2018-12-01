@@ -44,13 +44,13 @@ function slide() {
   var imgslider2 = document.getElementById("slidd");
   var swiTch = 1;
   var images = [
-    "../images/client2.jpg",
-    "../images/bracelet.jpg",
-    "../images/Computers.jpg",
-    "../images/Tv.jpg",
-    "../images/drawing.jpg",
-    "../images/gameConsole.jpg",
-    "../images/Girraf.jpg"
+    "assets/images/client2.jpg",
+    "assets/images/bracelet.jpg",
+    "assets/images/Computers.jpg",
+    "assets/images/Tv.jpg",
+    "assets/images/drawing.jpg",
+    "assets/images/gameConsole.jpg",
+    "assets/images/Girraf.jpg"
   ];
   setInterval(function() {
     swiTch++;
