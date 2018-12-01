@@ -50,6 +50,24 @@ function hambugerMenu() {
     $(".hamMenu div:nth-child(1)").toggleClass("first");
     $(".hamMenu div:nth-child(2)").toggleClass("second");
     $(".hamMenu div:nth-child(3)").toggleClass("third");
+    $(".hamMenu").toggleClass("cirhamMenu");
     $("nav ul").slideToggle(500);
   });
+}
+
+function start() {
+  var back = "back";
+  $("#go").click(function() {
+    var task = $("#go");
+    if (back === "next") {
+      $("#task").css("display", "none");
+      task.text("Hide Task Sheet");
+      back = "back";
+    } else {
+      $("#task").css("display", "block");
+      task.text("View Task Sheet");
+      back = "next";
+    }
+  });
+  hambugerMenu();
 }

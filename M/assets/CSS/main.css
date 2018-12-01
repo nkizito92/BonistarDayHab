@@ -3,6 +3,9 @@
   font-family: "Nunito", sans-serif;
   font-weight: 500;
 }
+nav div {
+  display: block;
+}
 
 ::-webkit-scrollbar {
   min-width: 10px;
@@ -45,6 +48,7 @@ nav ul {
   display: none;
 }
 nav ul li {
+  display: block;
   margin: 15px 0;
 }
 a[target="_self"] {
@@ -114,7 +118,6 @@ main {
   padding: 0 9px;
   width: 94%;
   font-size: 14pt;
-  height: 100%;
 }
 
 #mbackground p {
@@ -186,6 +189,7 @@ small {
 }
 
 footer {
+  position: relative;
   background-color: black;
   text-align: center;
   margin: 0 auto;
@@ -195,13 +199,6 @@ footer {
 }
 
 /*WhatWeDo*/
-
-header {
-  margin: auto;
-  background-color: gray;
-  width: 1000px;
-  color: white;
-}
 
 li {
   list-style: none;
@@ -228,18 +225,31 @@ li {
 }
 
 /*Hours & Location*/
-
+#task {
+  display: none;
+}
+.hours {
+  display: none;
+  transition: all 0.4s linear;
+}
 .map {
-  margin: auto;
+  margin: 0 auto;
   max-width: 640px;
   max-height: 350px;
   width: 100% !important;
-  height: 98% !important;
 }
-
+#go {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid green;
+  color: green;
+  border-radius: 6px;
+  width: 220px;
+  text-align: center;
+}
 .bordermap {
   position: relative;
-  margin: auto;
+  margin: 0 auto;
   max-width: 640px;
   max-height: 350px;
   border: 6px solid orange;

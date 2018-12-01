@@ -3,55 +3,66 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../assets/CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/CSS/hamMenu.css">
     <link rel="shortcut icon" href="../assets/images/mylogo3.png">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/b563a0f3f3.js"></script>
-    <script src="../assets/JS/Contact.js"></script>
+    <script src="../assets/JS/index.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0">
 </head>
 
 <body id="background">
-    <nav id="nav" itemscope itemtype="">
-        <ul> 
-            <li> <a href="../index.html" itemprop="url">Home</a></li>
+    <nav itemscope itemtype="">
+        <div class="hamMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul>
+            <li><a href="../index.html" itemprop="url">Home</a></li>
             <li><a href="WhatWeDo.html">What We Do</a></li>
             <li><a href="HoursLocation.html">Hours &amp; Location</a></li>
-            <li><a id="links" href="Contacts.php" style="color: orange;">Contact</a></li>
-           
-           <!-- <li> <a href="WeeklySch.html">Weekly Schedule</a></li>--></ul>
-        
+
+            <!-- <li><a href="WeeklySch.html">Weekly Schedule</a></li>-->
+            <li><a href="Contacts.php" style="color:orange;">Contact</a></li>
+        </ul>
     </nav>
-  <?php include('ContactformProcess.php'); ?>  
-    <form name="formSub" >
-       <div> <legend  align="center">CONTACT US</legend>
-        <br>
-       <input id="input" name="name" type="text" placeholder="FullName"><br>
-        
-       
-        <input id="input" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"  name="phone" type="tel" placeholder="000 000 0000" title="Phone number"><br>
-        
-        
-       <input id="input" name="email" type="email" placeholder="Email">
-        <input id="input" name="subject" type="text" placeholder="Subject"><br><br>
-        
-        
-        
-        <textarea name="message" id="EmailCenter" placeholder="YourText" style="font-size:15pt;" rows="10" wrap="soft" ></textarea><br>
-        
-        
-        <input id="submit" type="submit" value="Send Message"></div>
+    <?php include('ContactformProcess.php'); ?>
+    <form name="formSub">
+        <div>
+            <legend align="center">CONTACT US</legend>
+            <br>
+            <input id="input" name="name" type="text" placeholder="FullName"><br>
+
+
+            <input id="input" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" name="phone" type="tel" placeholder="000 000 0000"
+                title="Phone number"><br>
+
+
+            <input id="input" name="email" type="email" placeholder="Email">
+            <input id="input" name="subject" type="text" placeholder="Subject"><br><br>
+
+
+
+            <textarea name="message" id="EmailCenter" placeholder="YourText" style="font-size:15pt;" rows="10" wrap="soft"></textarea><br>
+
+
+            <input id="submit" type="submit" value="Send Message">
+        </div>
     </form>
-      <footer>
+    <footer>
         <p>Find Us: 15635 Vision Dr. &#35;113 Pflugerville, TX 78660</p>
         <p>Email Us: bstar4dayhab&#64;yahoo.com</p>
         <p>Call Us: 512-825-2302 or 512-206-6554</p>
 
         <small>copy rights 2018 Kizito Njoku, all rights reserved</small>
     </footer>
-<!--    <script> contacts ();</script>-->
+    <script> hambugerMenu();</script>
 </body>
 
 </html>
