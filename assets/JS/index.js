@@ -6,10 +6,10 @@ function index() {
   var imgslider = document.getElementById("imgcenter");
   var swiTch = 1;
   var slid = [
-    "url(../images/building.jpg)",
-    "url(../images/Computers.jpg)",
-    "url(../images/Cat.jpg)",
-    "url(../images/clients.jpg)"
+    "url(../assets/images/building.jpg)",
+    "url(../assets/images/Computers.jpg)",
+    "url(../assets/images/Cat.jpg)",
+    "url(../assets/images/clients.jpg)"
   ];
 
   setInterval(function() {
@@ -44,13 +44,13 @@ function slide() {
   var imgslider2 = document.getElementById("slidd");
   var swiTch = 1;
   var images = [
-    "../assets/images/client2.jpg",
-    "../assets/images/bracelet.jpg",
-    "../assets/images/Computers.jpg",
-    "../assets/images/Tv.jpg",
-    "../assets/images/drawing.jpg",
-    "../assets/images/gameConsole.jpg",
-    "../assets/images/Girraf.jpg"
+    "assets/images/client2.jpg",
+    "assets/images/bracelet.jpg",
+    "assets/images/Computers.jpg",
+    "assets/images/Tv.jpg",
+    "assets/images/drawing.jpg",
+    "assets/images/gameConsole.jpg",
+    "assets/images/Girraf.jpg"
   ];
   setInterval(function() {
     swiTch++;
