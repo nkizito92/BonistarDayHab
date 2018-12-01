@@ -6,10 +6,10 @@ function index() {
   var imgslider = document.getElementById("imgcenter");
   var swiTch = 1;
   var slid = [
-    "url(../assets/images/building.jpg)",
-    "url(../assets/images/Computers.jpg)",
-    "url(../assets/images/Cat.jpg)",
-    "url(../assets/images/clients.jpg)"
+    "url(assets/images/building.jpg)",
+    "url(assets/images/Computers.jpg)",
+    "url(assets/images/Cat.jpg)",
+    "url(assets/images/clients.jpg)"
   ];
 
   setInterval(function() {
