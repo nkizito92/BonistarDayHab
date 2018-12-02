@@ -247,6 +247,11 @@ li {
   width: 220px;
   text-align: center;
 }
+
+#go:active {
+  background-color: green;
+  color: white;
+}
 .bordermap {
   position: relative;
   margin: 0 auto;
