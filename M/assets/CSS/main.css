@@ -130,9 +130,9 @@ main {
   min-width: 320px;
   max-width: 768px;
   width: 100%;
-  border-image: url("/assets/images/Borderhand.jpg") 270 round;
+  border-image: url("../images/Borderhand.jpg") 270 round;
   transition: 1s ease;
-  background-image: url("/assets/images/building.jpg");
+  background-image: url("../images/building.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 56%;
