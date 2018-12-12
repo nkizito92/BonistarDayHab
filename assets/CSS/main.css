@@ -1,7 +1,5 @@
 * {
   margin: 0;
-  font-family: "Nunito", sans-serif;
-  font-weight: 500;
 }
 ::-webkit-scrollbar {
   min-width: 10px;
@@ -29,6 +27,15 @@ body {
   background-color: #eaeaea;
 }
 
+#landing {
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+#landing h1 {
+  color: white;
+}
+
 nav {
   position: sticky;
   -webkit-position: sticky;
@@ -46,35 +53,14 @@ nav ul li {
   display: inline-block;
 }
 
-/*logo*/
-a[title="Home"] {
-  position: relative;
-  font-family: Vivaldi;
-  font-size: 26pt;
-  font-weight: normal;
-  text-decoration: none;
-  color: white;
-  text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
-  padding: 10px;
-  bottom: 10px;
-  right: 200px;
-}
-
+/* logo */
 nav img {
   position: absolute;
-  width: 80px;
+  width: 220px;
+  right: -3px;
   bottom: -23px;
-  right: -8px;
 }
 
-nav a[title="Home"]:hover {
-  background: none;
-  text-decoration: none;
-}
-
-nav a[title="Home"]:active {
-  color: white;
-}
 /*day Hab*/
 nav a[title="Home"] span {
   position: absolute;
@@ -103,6 +89,7 @@ nav li a {
 }
 nav li a:hover {
   text-decoration: underline;
+  color: white;
 }
 nav li a:active {
   color: red;
@@ -117,26 +104,18 @@ nav li a:active {
   text-decoration: none;
   color: white;
 }
+#Event3 #links2:active {
+  text-decoration: underline;
+}
 #links2:active {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
-}
-#links2:hover {
-  animation: linblin 1s infinite;
-}
-@keyframes linblin {
-  50% {
-    background-color: cyan;
-  }
-  100% {
-    background-color: none;
-  }
 }
 
 main {
   position: relative;
   margin: auto;
-  background-color: white;
+  background-color: gray;
   max-width: 800px;
   width: 100%;
 
@@ -148,18 +127,25 @@ main {
 }
 
 #imgcenter {
-  position: relative;
+  position: absolute;
   width: 100%;
   margin: 0 auto;
-  max-width: 1100px;
-  padding-bottom: 620px;
-  border-left: 120px solid transparent;
-  border-right: 120px solid transparent;
-  border-image: url("../images/Borderhand.jpg") 270 round;
+  height: 100%;
   transition: 1s ease;
   background-image: url("../images/building.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-size: 100%;
+  animation: 4s blk normal;
+}
+
+@keyframes blk {
+  0% {
+    filter: brightness(0);
+  }
+  100% {
+    filter: brightness(1);
+  }
 }
 
 #listEvents {
