@@ -125,26 +125,64 @@ main {
 #mbackground p {
   padding-bottom: 10px;
 }
-
 #imgcenter {
   position: absolute;
   width: 100%;
-  margin: 0 auto;
   height: 100%;
-  transition: 1s ease;
-  background-image: url("../images/building.jpg");
+  background-color: black;
+  z-index: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+
+#imgcenter li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background-color: black;
+  transition: 2s linear;
+  list-style: none;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 100%;
-  animation: 4s blk normal;
+  background-size: 100% 100%;
+  animation: 40s blk linear infinite;
+}
+
+#imgcenter li:nth-child(1) {
+  background-image: url("../images/building.jpg");
+}
+#imgcenter li:nth-child(2) {
+  background-image: url("../images/Cat.jpg");
+  animation-delay: 10s;
+}
+#imgcenter li:nth-child(3) {
+  background-image: url("../images/Computers.jpg");
+  animation-delay: 20s;
+}
+#imgcenter li:nth-child(4) {
+  background-image: url("../images/clients.jpg");
+  animation-delay: 30s;
 }
 
 @keyframes blk {
   0% {
-    filter: brightness(0);
+    opacity: 0;
+    animation-timing-function: ease-in;
   }
-  100% {
-    filter: brightness(1);
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
   }
 }
 
