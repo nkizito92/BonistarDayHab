@@ -2,15 +2,6 @@ function index() {
   if (screen.width <= 800) {
     window.location.replace("M/index.html");
   }
-  // image slide for main page
-  var imgslider = document.getElementById("imgcenter");
-  var swiTch = 1;
-  var slid = [
-    "url(assets/images/building.jpg)",
-    "url(assets/images/Computers.jpg)",
-    "url(assets/images/Cat.jpg)",
-    "url(assets/images/clients.jpg)"
-  ];
 
   setInterval(function() {
     swiTch++;

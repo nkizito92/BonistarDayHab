@@ -95,11 +95,6 @@ nav li a:active {
   color: red;
 }
 
-#links2 {
-  text-decoration: none;
-  color: black;
-}
-
 #Event3 #links2 {
   text-decoration: none;
   color: white;
@@ -115,7 +110,7 @@ nav li a:active {
 main {
   position: relative;
   margin: auto;
-  background-color: gray;
+  background-color: rgb(247, 247, 247);
   max-width: 800px;
   width: 100%;
 
@@ -318,11 +313,11 @@ li {
 /*Contacts*/
 
 #background {
-  background-image: url(../images/hand-prints.jpg);
+  background-image: url("../images/hand-prints.jpg");
 }
 form {
   width: 80% !important;
-  font-size: 17pt;
+  font-size: 12pt;
   position: relative;
   margin: auto;
   max-width: 700px;
