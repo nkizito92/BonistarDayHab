@@ -277,7 +277,9 @@ li {
 }
 
 /*Hours & Location*/
-
+#taskSection {
+  margin: 10px;
+}
 .map {
   margin: auto;
   max-width: 750px;

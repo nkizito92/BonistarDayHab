@@ -19,9 +19,11 @@ function start() {
 
   function hide() {
     if (next === "back") {
+      go.innerText = "Hide Task Sheet";
       task.hidden = false;
       next = "hide";
     } else {
+      go.innerText = "View Task Sheet";
       task.hidden = true;
       next = "back";
     }
