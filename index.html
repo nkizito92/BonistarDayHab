@@ -31,16 +31,125 @@
   </head>
 
   <body>
-    <ul id="imgcenter">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <div id="landing">
-      <h1>Welcome To BoniStarDayHay</h1>
-      <a class="btn btn-lg btn-primary" href="landing.html">View DayHab</a>
+    <nav itemscope itemtype="">
+      <ul>
+        <li>
+          <a href="index.html" title="Home"
+            ><img src="assets/images/Logo.png" draggable="false" />
+          </a>
+        </li>
+        <li>
+          <a href="index.html" itemprop="url" style="color:orange;">Home</a>
+        </li>
+        <li><a href="HTML/WhatWeDo.html">What We Do</a></li>
+        <li><a href="HTML/HoursLocation.html">Hours &amp; Location</a></li>
+
+        <!-- <li><a href="HTML/WeeklySch.html">Weekly Schedule</a></li> -->
+        <li><a href="HTML/Contacts.php">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="space">
+      <ul id="imgcenter">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div id="landing">
+        <h1>
+          WELCOME TO
+        </h1>
+        <h2>BONISTAR DAYHAB</h2>
+        <a class="btn btn-sm btn-dark" href="HTML/Contacts.html">CONTACT US</a>
+      </div>
     </div>
+
+    <main class="container">
+      <p>
+        BDH is an organization committed to providing the best care, community
+        involvement, and quality of life for the MHMR and the special needs
+        community. BDH is a large family of consumers who love being there as
+        much as we love having them.
+      </p>
+      <br />
+
+      <p>
+        We believe that everyone wants to be understood, heard, and loved. We
+        also believe that in order to gain respect, we must give it.
+      </p>
+      <br />
+
+      <p>
+        Each consumer has a separate set of needs. We are still a small enough
+        workshop to be able to meet each set of needs. When a consumer has a
+        passion or a goal, we like to focus on that. We also provide job
+        placement assistance and supported employment. We have a full
+        functioning computer lab, arts/crafts room, and gaming/movie room.
+      </p>
+
+      <table id="listEvents">
+        <td colspan="2" align="center">
+          <div id="Event1" itemscope itemtype="">
+            <h3>Our Hours</h3>
+            Monday-Friday: 8:30am-4:00pm Saturday-Sunday: closed<br />
+            <a
+              itemprop="url"
+              href="HTML/hoursLocation.html"
+              target="_blank"
+              class="btn btn-outline-light"
+              >More!!</a
+            >
+          </div>
+        </td>
+        <td>
+          <div id="Event3" itemscope itemtype="">
+            <h3>What we do</h3>
+            <p>
+              Bonistar is a self-sustaining, master-planned, integrated
+              community where adults, with intellectaul and developmental
+              disabilites can learn and grow emotionally.
+            </p>
+            <br />
+            <a
+              itemprop="url"
+              href="HTML/WhatWeDo.html"
+              target="_blank"
+              class="btn btn-outline-light"
+              >More!!</a
+            >
+          </div>
+        </td>
+        <td>
+          <div id="Event4" itemscope itemtype="">
+            <h3>Contacts</h3>
+            <p>
+              To contact us dial this number <br />
+              512-825-2302 or 512-206-6554.
+            </p>
+            <p>To email us click here below.</p>
+            <br />
+
+            <a
+              itemprop="url"
+              href="HTML/Contacts.php"
+              target="_blank"
+              class="btn btn-outline-light"
+              >More!!</a
+            >
+          </div>
+        </td>
+      </table>
+    </main>
+    <footer>
+      <br />
+      <ul>
+        <li>Find Us: 15635 Vision Dr. &#35;113 Pflugerville, TX 78660</li>
+        <li>Email Us: bstar4dayhab&#64;yahoo.com</li>
+        <li>Call Us: 512-825-2302 or 512-206-6554</li>
+      </ul>
+      <small>copy rights 2018 Kizito Njoku, all rights reserved</small>
+    </footer>
     <script>
       index();
     </script>
