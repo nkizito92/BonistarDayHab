@@ -36,12 +36,22 @@ body {
   position: relative;
   text-align: center;
   padding-top: 10vh;
+  animation: 4s fade ease-in;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 #landing h1 {
   color: white;
   font-size: 60pt;
   font-weight: 500;
-  margin-bottom: 60px;
+  margin-bottom: 68px;
 }
 #landing h2 {
   color: white;
@@ -187,12 +197,13 @@ main {
   position: relative;
   margin: auto;
   background-color: rgb(247, 247, 247);
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
 
   padding: 0 20px;
   font-size: 14pt;
 }
+
 #mbackground p {
   padding-bottom: 10px;
 }
