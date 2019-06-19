@@ -151,8 +151,10 @@ nav ul li {
 nav img {
   position: absolute;
   width: 220px;
-  right: 500px;
-  bottom: -23px;
+  right: 200px;
+  margin-left: 50px;
+  top: 0;
+  left: 0;
 }
 
 /*day Hab*/
