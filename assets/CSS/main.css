@@ -154,7 +154,7 @@ nav ul li {
 /* logo */
 nav img {
   position: absolute;
-  width: 220px;
+  width: 180px;
   right: 200px;
   margin-left: 50px;
   top: 0;
@@ -305,7 +305,7 @@ li {
   position: absolute;
   width: 440px;
   left: 300px;
-  bottom: 120px;
+  bottom: 200px;
 }
 
 /*Hours & Location*/

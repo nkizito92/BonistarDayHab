@@ -2,14 +2,6 @@ function index() {
   if (screen.width <= 800) {
     window.location.replace("M/index.html");
   }
-
-  setInterval(function() {
-    swiTch++;
-    if (swiTch > slid.length - 1) {
-      swiTch = 0;
-    }
-    imgslider.style.backgroundImage = slid[swiTch];
-  }, 6000);
 }
 
 function start() {
