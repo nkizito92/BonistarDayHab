@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto;
 }
 ::-webkit-scrollbar {
   min-width: 10px;
@@ -201,17 +201,13 @@ nav li a:active {
 }
 
 main {
-  position: relative;
-  margin: auto;
-  background-color: rgb(247, 247, 247);
+  margin: 0 auto;
+  background-color: #f7f7f7;
   max-width: 1000px;
   width: 100%;
   padding: 20px;
   font-size: 14pt;
-}
-
-#mbackground p {
-  padding-bottom: 10px;
+  height: 100%;
 }
 
 #listEvents {
@@ -257,56 +253,44 @@ footer {
   z-index: 10;
   background-color: #242424;
   margin: auto;
-  padding: 40px 0;
   width: 100%;
   color: orange;
+  padding: 20px 0;
 }
-footer h4 {
-  position: absolute;
-  margin: 30px 0;
-  top: 0;
-  font-weight: 300;
-  color: white;
-}
-footer li span {
+
+footer span {
   display: inline-block;
   width: 5px;
   height: 25px;
   background-color: orange;
   margin-right: 10px;
 }
-
-footer div:nth-child(2) {
-  position: absolute;
-  display: inline;
-  right: 0;
+footer h4 {
+  position: relative;
+  margin: 30px;
   top: 0;
-}
-footer div:nth-child(2) ul {
-  padding: 20px 60px;
-  text-align: center;
-}
-
-/* tag called small  */
-footer div:nth-child(3) {
-  position: absolute;
-  text-align: center;
-  background-color: #1a1a1a;
-  width: 100%;
-  padding: 10px 0;
-  bottom: 0;
+  font-weight: 300;
   color: white;
-}
-
-footer ul {
-  margin: auto;
 }
 footer ul li {
   padding: 20px 60px;
   color: orange;
+  display: inline-block;
 }
-/*WhatWeDo*/
+footer ul li:nth-child(2) {
+  float: right;
+}
+/* tag called small  */
+.copyright {
+  text-align: center;
+  background-color: #1a1a1a;
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  float: none;
+}
 
+/*WhatWeDo */
 header {
   margin: auto;
   background-color: gray;
@@ -325,16 +309,19 @@ li {
 #programs li {
   padding-bottom: 40px;
 }
-
+#programs ul {
+  width: 100%;
+  max-width: 700px;
+}
+#programs ul li:nth-child(1) {
+  float: right;
+}
 #imgProg {
   width: 100%;
   max-width: 400px;
 }
 #imgProg img {
-  position: absolute;
   width: 440px;
-  left: 300px;
-  bottom: 200px;
 }
 
 /*Hours & Location*/
@@ -410,4 +397,50 @@ legend {
 textarea {
   border-radius: 8px;
   width: 99%;
+}
+
+@media (max-width: 575.98px) {
+  footer ul li:nth-child(2) {
+    float: none;
+  }
+  #landing h1 {
+    color: white;
+    font-size: 20pt;
+    font-weight: 500;
+    margin-bottom: 68px;
+  }
+  #landing h2 {
+    color: white;
+    font-size: 40pt;
+    font-weight: 100;
+  }
+  #imgcenter {
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    background-color: black;
+    z-index: 0;
+    list-style: none;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  footer ul li:nth-child(2) {
+    float: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  footer ul li:nth-child(2) {
+    float: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  ...;
+}
+
+@media (min-width: 1200px) {
+  ...;
 }
