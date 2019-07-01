@@ -50,7 +50,7 @@ body {
     height: 40px;
   }
   100% {
-    height: 200px;
+    height: 205px;
   }
 }
 @keyframes fade {
@@ -222,7 +222,6 @@ main {
   width: 100%;
   padding: 20px;
   font-size: 14pt;
-  height: 100%;
 }
 
 #listEvents {
@@ -265,9 +264,8 @@ main {
 }
 footer {
   position: relative;
-  z-index: 10;
   background-color: #242424;
-  margin: auto;
+  margin: 0 auto;
   width: 100%;
   color: orange;
   padding: 20px 0;
@@ -328,13 +326,6 @@ li {
   width: 100%;
   max-width: 700px;
 }
-#programs ul li:nth-child(1) {
-  float: right;
-}
-#imgProg {
-  width: 100%;
-  max-width: 400px;
-}
 #imgProg img {
   width: 440px;
 }
@@ -348,7 +339,7 @@ tbody {
   margin: 0 auto;
 }
 .map {
-  margin: auto;
+  margin: 0 auto;
   max-width: 750px;
   max-height: 550px;
   width: 100% !important;
@@ -415,6 +406,15 @@ textarea {
 }
 
 @media (max-width: 575.98px) {
+  #programs li {
+    display: inline;
+  }
+
+  #programs ul {
+    width: 100%;
+    max-width: 700px;
+  }
+
   #space {
     height: 65vh;
   }
@@ -503,11 +503,11 @@ textarea {
   }
   .first {
     position: relative;
-    transform: translate(9px, 13px) rotate(-45deg);
-    -webkit-transform: translate(9px, 13px) rotate(-45deg);
-    -moz-transform: translate(9px, 13px) rotate(-45deg);
-    -ms-transform: translate(9px, 13px) rotate(-45deg);
-    -o-transform: translate(9px, 13px) rotate(-45deg);
+    transform: translate(7px, 13px) rotate(-45deg);
+    -webkit-transform: translate(7px, 13px) rotate(-45deg);
+    -moz-transform: translate(7px, 13px) rotate(-45deg);
+    -ms-transform: translate(7px, 13px) rotate(-45deg);
+    -o-transform: translate(7px, 13px) rotate(-45deg);
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
@@ -540,6 +540,10 @@ textarea {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  #programs li {
+    display: inline;
+    margin: 0 auto;
+  }
   #space {
     height: 65vh;
   }
@@ -628,11 +632,11 @@ textarea {
   }
   .first {
     position: relative;
-    transform: translate(9px, 13px) rotate(-45deg);
-    -webkit-transform: translate(9px, 13px) rotate(-45deg);
-    -moz-transform: translate(9px, 13px) rotate(-45deg);
-    -ms-transform: translate(9px, 13px) rotate(-45deg);
-    -o-transform: translate(9px, 13px) rotate(-45deg);
+    transform: translate(7px, 13px) rotate(-45deg);
+    -webkit-transform: translate(7px, 13px) rotate(-45deg);
+    -moz-transform: translate(7px, 13px) rotate(-45deg);
+    -ms-transform: translate(7px, 13px) rotate(-45deg);
+    -o-transform: translate(7px, 13px) rotate(-45deg);
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
@@ -753,11 +757,11 @@ textarea {
   }
   .first {
     position: relative;
-    transform: translate(9px, 13px) rotate(-45deg);
-    -webkit-transform: translate(9px, 13px) rotate(-45deg);
-    -moz-transform: translate(9px, 13px) rotate(-45deg);
-    -ms-transform: translate(9px, 13px) rotate(-45deg);
-    -o-transform: translate(9px, 13px) rotate(-45deg);
+    transform: translate(7px, 13px) rotate(-45deg);
+    -webkit-transform: translate(7px, 13px) rotate(-45deg);
+    -moz-transform: translate(7px, 13px) rotate(-45deg);
+    -ms-transform: translate(7px, 13px) rotate(-45deg);
+    -o-transform: translate(7px, 13px) rotate(-45deg);
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
