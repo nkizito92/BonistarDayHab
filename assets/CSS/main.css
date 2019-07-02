@@ -285,6 +285,22 @@ footer h4 {
   font-weight: 300;
   color: white;
 }
+footer i {
+  color: white;
+  margin-right: 20px;
+  font-size: 18pt;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  transition: 0.2s linear;
+  color: orange;
+}
+footer i:hover {
+  transition: 0.2s linear;
+  color: orange;
+}
 footer ul li {
   padding: 20px 60px;
   color: orange;
@@ -327,7 +343,7 @@ li {
   max-width: 700px;
 }
 #imgProg img {
-  width: 440px;
+  width: 550px;
 }
 
 /*Hours & Location*/
@@ -434,6 +450,9 @@ textarea {
     left: -20px;
     display: block;
     padding: 10px 0;
+  }
+  #imgProg img {
+    width: 450px;
   }
   footer ul li:nth-child(2) {
     float: none;
@@ -564,6 +583,9 @@ textarea {
     display: block;
     padding: 10px 0;
   }
+  #imgProg img {
+    max-width: 480px;
+  }
   footer ul li:nth-child(2) {
     float: none;
   }
@@ -668,7 +690,7 @@ textarea {
   }
 }
 
-@media (min-width: 768px) and (max-width: 801.98px) {
+@media (min-width: 768px) and (max-width: 880.98px) {
   #space {
     height: 65vh;
   }
@@ -689,8 +711,12 @@ textarea {
     display: block;
     padding: 10px 0;
   }
+  #imgProg img {
+    width: 450px;
+  }
   footer ul li:nth-child(2) {
     float: none;
+    padding: 20px;
   }
   #landing h1 {
     color: white;
@@ -790,6 +816,14 @@ textarea {
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
+  }
+  footer ul li:nth-child(2) {
+    float: right;
+    padding: 20px 60px;
+  }
+
+  footer {
+    overflow: auto;
   }
 }
 
