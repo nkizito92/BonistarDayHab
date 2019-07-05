@@ -1,8 +1,8 @@
-function index() {
-  if (screen.width <= 800) {
-    window.location.replace("M/index.html");
-  }
-}
+// function index() {
+//   if (screen.width <= 800) {
+//     window.location.replace("M/index.html");
+//   }
+// }
 
 function start() {
   var task = document.getElementById("task");
@@ -31,7 +31,7 @@ function slide() {
   var images = [
     "../assets/images/client2.jpg",
     "../assets/images/bracelet.jpg",
-    "../assets/images/Computers.jpg",
+    "../assets/images/Computers2.jpg",
     "../assets/images/Tv.jpg",
     "../assets/images/drawing.jpg",
     "../assets/images/gameConsole.jpg",
