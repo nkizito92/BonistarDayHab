@@ -176,6 +176,13 @@ nav img {
   top: 0;
   left: 0;
 }
+.opacity {
+  transition: all 0.3s linear;
+}
+.opacity:hover {
+  transition: all 0.3s linear;
+  filter: opacity(0.5);
+}
 
 /*day Hab*/
 
