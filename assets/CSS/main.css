@@ -32,18 +32,18 @@ body {
   width: 100%;
   height: 85vh;
 }
-#landing {
-  position: relative;
-  text-align: center;
-  padding-top: 10vh;
-  animation: 4s fade ease-in;
-}
 .navDisplay {
   display: block;
   animation: fade 0.7s, navDis 0.5s;
 }
 .navDisplayRev {
   animation: fade 0.7s reverse, navDis 0.5s reverse;
+}
+#landing {
+  position: relative;
+  text-align: center;
+  padding-top: 10vh;
+  animation: 4s fade ease-in;
 }
 @keyframes navDis {
   0% {
@@ -63,13 +63,13 @@ body {
 }
 #landing h1 {
   color: white;
-  font-size: 60pt;
+  font-size: 6vw;
   font-weight: 500;
   margin-bottom: 68px;
 }
 #landing h2 {
   color: white;
-  font-size: 100pt;
+  font-size: 9.5vw;
   font-weight: 100;
 }
 #landing a {
@@ -156,6 +156,8 @@ nav {
   margin: 0 auto;
   padding: 20px 0;
   text-align: right;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
 }
 nav ul {
   display: block;
@@ -315,7 +317,7 @@ li {
   margin-bottom: 40px;
 }
 #imgProg img {
-  width: 550px;
+  width: 500px;
 }
 
 /*Hours & Location*/
@@ -394,6 +396,9 @@ textarea {
 }
 
 @media (max-width: 575.98px) {
+  .jumbotron h1 {
+    font-size: 6vw;
+  }
   #programs li {
     display: inline;
   }
@@ -424,7 +429,8 @@ textarea {
     padding: 10px 0;
   }
   #imgProg img {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
   }
   footer ul li:nth-child(2) {
     float: none;
@@ -437,7 +443,7 @@ textarea {
   }
   #landing h2 {
     color: white;
-    font-size: 40pt;
+    font-size: 12vw;
     font-weight: 100;
   }
   #imgcenter {
@@ -531,6 +537,9 @@ textarea {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .jumbotron h1 {
+    font-size: 6vw;
+  }
   #programs li {
     display: inline;
     margin: 0 auto;
@@ -556,6 +565,7 @@ textarea {
     padding: 10px 0;
   }
   #imgProg img {
+    width: 100%;
     max-width: 480px;
   }
   footer ul li:nth-child(2) {
@@ -669,7 +679,7 @@ textarea {
 
   nav img {
     position: absolute;
-    width: 180px;
+    max-width: 180px;
     right: 0;
     margin: 0 auto;
     top: 0;
@@ -685,7 +695,7 @@ textarea {
     padding: 10px 0;
   }
   #imgProg img {
-    width: 450px;
+    width: 500px;
   }
 
   #landing h1 {
@@ -800,6 +810,12 @@ textarea {
 @media (min-width: 900px) and (max-width: 1199.98px) {
   nav ul {
     display: block;
+  }
+  #landing h2 {
+    font-size: 10vw;
+  }
+  #imgProg img {
+    width: 500px;
   }
 }
 

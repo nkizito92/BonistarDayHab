@@ -22,7 +22,7 @@ function start() {
   }
   var go = document.getElementById("go");
   go.addEventListener("click", hide);
-  currentPage();
+  // currentPage();
 }
 
 function slide() {
@@ -44,14 +44,14 @@ function slide() {
     }
     imgslider2.src = images[swiTch];
   }, 3000);
-  currentPage();
+  // currentPage();
 }
-function currentPage() {
-  var path = document.getElementById("path");
-  if (screen.width <= 800) {
-    window.location.replace("/M/HTML/" + path.getAttribute("href"));
-  }
-}
+// function currentPage() {
+//   var path = document.getElementById("path");
+//   if (screen.width <= 800) {
+//     window.location.replace("/M/HTML/" + path.getAttribute("href"));
+//   }
+// }
 
 // hambugerMenu
 function hambugerMenu() {
