@@ -472,6 +472,9 @@ textarea {
   footer ul li:nth-child(2) {
     float: none;
   }
+  footer h4 {
+    width: 200px;
+  }
 
   #imgcenter {
     position: absolute;
