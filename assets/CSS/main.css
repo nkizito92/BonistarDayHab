@@ -451,13 +451,7 @@ textarea {
   #space {
     height: 46vh;
   }
-  nav img {
-    position: absolute;
-    width: 180px;
-    right: 0;
-    margin: 0 auto;
-    top: 0;
-  }
+
   nav ul {
     display: none;
   }
