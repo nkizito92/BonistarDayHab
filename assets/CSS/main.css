@@ -27,6 +27,7 @@ body {
   background-color: #eaeaea;
   background-image: url("../images/hand-prints.jpg");
 }
+
 #space {
   z-index: 10;
   width: 100%;
@@ -86,7 +87,7 @@ body {
 #imgcenter {
   position: absolute;
   width: 100%;
-  height: 85%;
+  height: inherit;
   background-color: black;
   z-index: 0;
   list-style: none;
@@ -449,7 +450,7 @@ textarea {
   }
 
   #space {
-    height: 46vh;
+    height: 75vh;
   }
 
   nav ul {
@@ -479,8 +480,7 @@ textarea {
   #imgcenter {
     position: absolute;
     width: 100%;
-    max-height: 300px;
-    height: 65%;
+    height: inherit;
     background-color: black;
     z-index: 0;
     list-style: none;
@@ -574,9 +574,6 @@ textarea {
     display: inline;
     margin: 0 auto;
   }
-  #space {
-    height: 65vh;
-  }
   nav img {
     position: absolute;
     width: 180px;
@@ -594,9 +591,13 @@ textarea {
     display: block;
     padding: 10px 0;
   }
+  #space {
+    height: 75vh;
+  }
   #imgcenter {
     position: absolute;
     width: 100%;
+    height: inherit;
     background-color: black;
     z-index: 0;
     list-style: none;
@@ -691,10 +692,6 @@ textarea {
 }
 
 @media (min-width: 768px) and (max-width: 880.98px) {
-  #space {
-    height: 65vh;
-  }
-
   nav img {
     position: absolute;
     max-width: 180px;
@@ -716,10 +713,13 @@ textarea {
     width: 500px;
   }
 
+  #space {
+    height: 85vh;
+  }
   #imgcenter {
     position: absolute;
     width: 100%;
-    height: 65%;
+    height: inherit;
     background-color: black;
     z-index: 0;
     list-style: none;
