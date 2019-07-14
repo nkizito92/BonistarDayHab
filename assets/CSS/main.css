@@ -54,7 +54,7 @@ body {
     height: 40px;
   }
   100% {
-    height: 205px;
+    height: 190px;
   }
 }
 @keyframes fade {
@@ -567,6 +567,14 @@ textarea {
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  @keyframes navDis {
+    0% {
+      height: 40px;
+    }
+    100% {
+      height: 205px;
+    }
+  }
   .jumbotron h1 {
     font-size: 6vw;
   }
