@@ -55,11 +55,21 @@ function slide() {
 
 // hambugerMenu
 function hambugerMenu() {
+ var navHeight = "short";
   $(".hamMenu").click(function() {
+   
     $(".hamMenu div:nth-child(1)").toggleClass("first");
     $(".hamMenu div:nth-child(2)").toggleClass("second");
     $(".hamMenu div:nth-child(3)").toggleClass("third");
     $(".hamMenu").toggleClass("cirhamMenu");
-    $("nav ul").toggleClass("navDisplay");
+    if(navHeight=== "short"){
+        $("nav ul").addClass("navDisplay").removeClass("navDisplayRev");
+          
+          navHeight = "long";
+    } else {
+        $("nav ul").removeClass("navDisplay").addClass("navDisplayRev");
+          navHeight = "short";
+    }
+  
   });
 }
