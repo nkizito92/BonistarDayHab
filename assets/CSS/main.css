@@ -33,15 +33,6 @@ body {
   width: 100%;
   height: 85vh;
 }
-.navDisplay {
-  display: block;
-  animation: fade 0.7s, navDis 0.5s;
-  -webkit-animation: fade 0.7s, navDis 0.5s;
-}
-.navDisplayRev {
-  animation: fade 0.7s reverse, navDis 0.5s reverse;
-  -webkit-animation: fade 0.7s reverse, navDis 0.5s reverse;
-}
 #landing {
   position: relative;
   text-align: center;
@@ -567,14 +558,6 @@ textarea {
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  @keyframes navDis {
-    0% {
-      height: 40px;
-    }
-    100% {
-      height: 205px;
-    }
-  }
   .jumbotron h1 {
     font-size: 6vw;
   }
