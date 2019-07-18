@@ -395,15 +395,12 @@ form {
   padding: 15px;
 }
 form div {
-  font-size: 10vw;
+  font-size: 10vh;
   font-weight: 300;
 }
 #EmailCenter {
   width: 99%;
   overflow-x: hidden;
-}
-legend {
-  font-size: 28pt;
 }
 #input {
   border-radius: 8px;
