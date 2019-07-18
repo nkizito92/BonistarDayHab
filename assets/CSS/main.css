@@ -386,7 +386,7 @@ tbody {
   background-image: url("../images/hand-prints.jpg");
 }
 form {
-  width: 80% !important;
+  width: 100;
   font-size: 12pt;
   position: relative;
   margin: 0 auto;
