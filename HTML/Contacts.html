@@ -33,9 +33,9 @@
     <meta charset="utf-8" />
   </head>
 
-  <body id="background">
+  <body>
     <div>
-      <nav id="nav" itemscope itemtype="">
+      <nav itemscope itemtype="">
         <div class="hamMenu">
           <div></div>
           <div></div>
@@ -62,7 +62,9 @@
     </div>
     <?php include('ContactformProcess.php'); ?>
     <form name="formSub">
-      <legend align="center">CONTACT US</legend>
+      <legend class="display-4 bg-dark text-white  p-4" align="center">
+        CONTACT US
+      </legend>
       <br />
       <input id="input" name="name" type="text" placeholder="FullName" /><br />
 
@@ -71,7 +73,7 @@
         pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
         name="phone"
         type="tel"
-        placeholder="999 999 9999"
+        placeholder="999-999-9999"
         title="Phone number"
       /><br />
 
@@ -95,7 +97,7 @@
 
       <input
         id="submit"
-        class="btn btn-success btn-lg btn-block"
+        class="btn btn-info btn-lg btn-block"
         type="submit"
         value="Send Message"
       />

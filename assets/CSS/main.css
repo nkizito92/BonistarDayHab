@@ -389,11 +389,10 @@ form {
   width: 80% !important;
   font-size: 12pt;
   position: relative;
-  margin: auto;
-  max-width: 700px;
-  background-color: rgba(255, 165, 0, 0.74);
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #eeeeee;
+  padding: 15px;
 }
 #EmailCenter {
   width: 99%;
@@ -404,7 +403,10 @@ legend {
 }
 #input {
   border-radius: 8px;
-  width: 99%;
+  border: 1px solid #ffaa48;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  width: 100%;
 }
 
 #submit {
@@ -412,7 +414,9 @@ legend {
 }
 textarea {
   border-radius: 8px;
-  width: 99%;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ffaa48;
 }
 
 @media (max-width: 575.98px) {
@@ -794,6 +798,9 @@ textarea {
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
+  }
+  .card-body {
+    height: 225px;
   }
   footer ul li:nth-child(2) {
     float: right;
